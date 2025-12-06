@@ -1,0 +1,84 @@
+/* Contains custom UI elements in passages */
+
+:: StoryInterface {"position":"450,0","size":"100,100"}
+<div id="container">
+	<div id="header"></div>
+  	<div id="console">
+		<div id="title-bar" data-passage="title-bar"></div>
+		<div id="nav" class="fa-icons" data-passage="nav"></div>
+  		<div id="passages"></div>
+  	</div>
+  	<div id="footer"></div></div>
+</div>
+
+:: nav [noreturn nobr] {"position":"250,150","size":"100,100"}
+<<link '<i class="fa-solid fa-bookmark" alt="saves"></i>'>><<run UI.saves();>><</link>>
+
+<<link '<i class="fa-solid fa-gear" alt="settings"></i>'>><<run UI.settings();>><</link>>
+
+<<link '<i class="fa-solid fa-user" alt="profile"></i>'>>
+    <<script>>
+        Dialog.setup("profile","profile");
+        Dialog.wiki(Story.get("profile").processText());
+        Dialog.open();
+    <</script>>
+<</link>>
+
+<<link '<i class="fa-solid fa-arrow-rotate-left" alt="back"></i>'>><<goto `$history[$history.length - 2]`>><<set $history.delete($history[$history.length - 1])>><</link>>
+
+<<link '<i class="fa-solid fa-door-open" alt="restart"></i>'>><<run UI.restart();>><</link>>
+
+:: title-bar [noreturn nobr] {"position":"125,150","size":"100,100"}
+<div id="title-container">
+    <span class="title-item">[[Jester Lumos|start-menu]]</span>
+    <span class="chapter-item"><a href="https://www.paradisevalley.edu/employees/assessment-learning/puma-portfolio" target="_blank">Puma Portfolio</a></span>
+</div>
+
+:: start-menu [start-menu noreturn] {"position":"0,300","size":"100,100"}
+<<fadein 1s>>
+    <div id="start-title">Jester Lumos</div>
+    <div id="start-subtitle">The Writer</div>
+    <<nobr>><div id="start-menu">
+        <<button "View Portfolio" "p_00">><<set $chapter to "Chapter One">><</button>>
+
+        <<button "Settings">><<run UI.settings();>><</button>>
+        
+        <<button "Saved Sessions">><<run UI.saves();>><</button>>
+        
+        <<button "Artist's Statement">>    <<script>>Dialog.setup("profile","profile");Dialog.wiki(Story.get("profile").processText());Dialog.open();<</script>>
+        <</button>>
+
+        <<button "Sources">>
+            <<script>>
+                Dialog.setup("credits","credits");
+                Dialog.wiki(Story.get("credits").processText());
+                Dialog.open();
+            <</script>>
+        <</button>>
+    </div><</nobr>>
+    <div id="start-menu"><small>Please reach out at <a href="mailto:jesterlumos@gmail.com">jesterlumos@gmail.com</a> rather than my @maricopa.edu address as that account is under my deadname.</small></div>
+<</fadein>>
+
+:: credits [credits noreturn] {"position":"375,150","size":"100,100"}
+<h2>Project</h2>
+This is a submission to the Puma Portfolio project at Paradise Valley Community College. View the <a href="https://www.paradisevalley.edu/employees/assessment-learning/puma-portfolio" target="_blank">project details here</a> for more information.
+
+<h2>Interactive Fiction Engine</h2>
+<li>Twine by Chris Klimas - <a href="https://twinery.org/cookbook/" target="_blank">Twine Cookbook</a></li>
+<li>Sugarcube by Thomas Michael Edwards - <a href="https://www.motoslave.net/sugarcube/2/docs/" target="_blank">Sugarcube 2 Documentation</a></li>
+<li>Custom Macros by ChapelR - <a href="https://github.com/ChapelR/custom-macros-for-sugarcube-2" target="_blank">ChapelR Custom Macros Collection</a></li>
+<li>Template by becky - <a href="https://losingface.itch.io/a-sugarcube-template" target="_blank">itch.io</a>
+
+<h2>Web Assets</h2>
+<li>Icons - <a href="https://fontawesome.com/" target="_blank"> Font Awesome Icons</a></li>
+<li>Fonts - <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>; <a href="https://opendyslexic.org/" target="_blank">Open Dyslexic</a></li>
+<h2>Hosting</h2>
+This site is hosted by <a href="https://developers.cloudflare.com/pages/" target="_blank">Cloudflare Pages</a> with a redirect from <a href="https://docs.github.com/en/pages" target="_blank">Github Pages</a>. You can view the source code at the <a href="https://github.com/jesterlumos/jesterlumos.github.io" target="_blank">Github Repository</a>.
+
+<small style="text-align: center;">DISCLAIMER: This project was created for the fair use purpose of education. All intellectual property belongs to its respective owners, and I only claim ownership over my own copyrighted works displayed on this page. This page is not regularly maintained, and external links may break as resources are moved or taken down. Please refer to the credited names and seek the most updated information.</small>
+
+:: profile [noreturn] {"position":"500,150","size":"100,100"}
+<h1>Artist's Statement</h1>
+"Nothing enrages me more than the notion of the idea //'coming to'// or being //'found by'// the artist. An idea is anything I //decide// is an idea. There’s ideas in your current surroundings. There’s ideas in my breakfast. There’s ideas in every conversation, every sensation, every occupation. The world is littered with them, and my job is simply to decide one of them gets to truly live, drop its seed into the offensive soil of a blank page, and listen as it whispers to me how it is meant to grow.
+
+When it has spread everywhere it could ever be across every corner of the space, I must overpower it, don scalpel and brass knuckles, and lovingly pummel it in the gut until it spills bottled emotion across the page and begs for mercy. I take a chisel and don’t stop carving until I see aching, shimmering bone. When I’ve finished and the tortured, anguished thing in front of me screams in tune with my inner monologue, I lock it away in a drawer until I forget it ever existed. I either find it as a finished piece or catch a hint of free will and look for the woodchipper." – Jester Lumos, 2024

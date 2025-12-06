@@ -1,0 +1,82 @@
+/* Contains configuration passages and SugarCube special passages (StoryInterface is in ui.tw) */
+
+:: StoryTitle
+Jester Lumos – Puma Portfolio
+
+
+:: StoryData
+{
+  "ifid": "C2F70416-D44E-4965-BAC4-0347F1833ADF",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Start",
+  "tag-colors": {
+    "chapter-intro": "yellow",
+    "game-start": "green",
+    "the-writer": "purple",
+    "writing": "purple",
+    "poetry": "purple",
+    "cnf": "purple",
+    "fiction": "purple",
+    "past": "purple",
+    "future": "purple",
+    "motivation": "purple",
+    "achievements-strengths": "purple",
+    "goals-plans": "purple",
+    "classes": "purple",
+    "strengths": "purple",
+    "achivements": "purple",
+    "classes-activites": "purple",
+    "tbd": "red",
+    "planning": "green",
+    "plan": "red",
+    "foi": "purple",
+    "degree": "purple"
+  },
+  "zoom": 0.6
+}
+
+:: PassageDone [noreturn nobr footer] {"position":"325,0","size":"100,100"}
+
+:: PassageHeader [noreturn nobr] {"position":"200,0","size":"100,100"}
+<<if settings.notifs>><<if tags().includes('autosave')>><<notify 2s>>Saving...<</notify>><</if>><</if>>
+
+<<if not $history.includes(passage())>><<set $history.push(passage())>><</if>>
+
+:: StoryInit {"position":"575,0","size":"100,100"}
+<<set $name to "Puma Portfolio">>
+<<set $chapter to "">>
+
+<<set $playedAnimations to []>>
+<<set $history to []>>
+
+:: widget setup [widget noreturn] {"position":"700,0","size":"100,100"}
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+
+<<button "Button">><</button>>
+
+<<textbox "$textbox" $textbox>>
+
+<<listbox "$listbox">>
+	<<option "Listbox 1">>
+	<<option "Listbox 2">>
+	<<option "Listbox 3">>
+<</listbox>>
+
+<<cycle "$cycle">>
+	<<option "Cycling 1">>
+	<<option "Cycling 2">>
+	<<option "Cycling 3">>
+<</cycle>>
+
+<li>List Item</li>
+<li>List Item</li>
+<li>List Item</li>
+
+<<nobr>><div class="choices">
+	<div class="choice-item">[[]]</div>
+	<div class="flirt-choice-item">[[]]</div>
+	<div class="special-choice-item">[[]]</div>
+</div><</nobr>>

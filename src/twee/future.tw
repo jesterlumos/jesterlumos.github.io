@@ -1,0 +1,45 @@
+:: p_30 [future] {"position":"150,1400","size":"100,100"}
+<<if $playedAnimations.includes(passage()) and settings.autoskip>>The writer's past is transparent. Immutable. Their future is yet to be determined. It may even depend on <em>you</em>. It unnerves you when they mention you. You wonder where they are going.
+
+Explore Jester's...
+<<nobr>><div class="choices">
+	<div class="flirt-choice-item">[[Academic Plan|p_31]]</div>
+	<div class="special-choice-item">[[Field of Interest (FOI)|p_32]]</div>
+	<div class="choice-item">[[Degree|p_33]]</div>
+    <div class=choice-item><a href="https://jesterlumos.github.io/downloads/General%20Education%20Skills%20Inventory.pdf">PVCC General Education Skills Inventory</a></div>
+</div>
+
+<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small><</nobr>><<else>><<set $playedAnimations.push(passage())>><<fadein 1s>>The writer's past is transparent. <</fadein>><<timed 2s>><<fadein 1s>>Immutable. <</fadein>><</timed>><<timed 3s>><<fadein 1s>>Their future is yet to be determined. <</fadein>><</timed>><<timed 5s>><<fadein 1s>>It may even depend on <em>you</em>. <</fadein>><</timed>><<timed 6.5s>><<fadein 1s>>It unnerves you when they mention you. <</fadein>><</timed>><<timed 8s>><<fadein 1s>>You wonder where they are going. <</fadein>><</timed>>
+
+<<timed 10s>>Explore Jester's...
+<<nobr>><div class="choices">
+	<div class="choice-item">[[Academic Plan|p_31]]</div>
+	<div class="choice-item">[[Field of Interest (FOI)|p_32]]</div>
+	<div class="flirt-choice-item">[[Degree|p_33]]</div>
+    <div class=choice-item><a href="https://jesterlumos.github.io/downloads/General%20Education%20Skills%20Inventory.pdf">PVCC General Education Skills Inventory</a></div>
+</div>
+
+<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small><</nobr>><</timed>><</if>>
+
+
+:: p_31 [autosave plan] {"position":"275,1400","size":"100,100"}
+This resource will be attached here once generated.
+
+<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small>
+
+
+:: p_32 [autosave foi] {"position":"400,1400","size":"100,100"}
+<h2>Fields of Interest (FOIs)</h2>
+As per the PVCC homepage, "Fields of Interest organize degrees and certificates that share similar areas of study, allowing you to identify your skills and interests to find a career path that’s best for you." See <a href="https://www.youtube.com/watch?v=lm0V2gPmrao&feature=youtu.be" target="_blank">MCCCD's overview video</a> for more information. 
+
+<h2>Culture and Society</h2>
+The <a href="https://www.paradisevalley.edu/degrees-certificates/culture-and-society" target="_blank">stated focus</a> of the Culture and Society FOI is "acquiring a deep understanding of humanity, society, and human expression." While this field includes poetry and thus my gravitation towards it was inevitable, there is substantial benefit to the interconnected nature of related disciplines within the field. My college education would not have been nearly as rounded or foundational as it was without connecting my own discipline to the full complexities of human culture and society across disciplines, cultures, and even eras of time.
+
+<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small>
+
+
+:: p_33 [degree] {"position":"525,1400","size":"100,100"}
+<h2>Degree Aspirations</h2>
+As of May 2026, I will have an Associates of the Arts (AA) degree in English with a focus on Creative Writing. If I am able to secure sufficient financial aid, I will then complete my BA in English (Creative Writing) at ASU, however circumstances outside of my control have limited my financial stability, so my education cannot continue otherwise. Regardless, I have never believed that I could complete a college program, and will now be graduating with a 4.0 GPA and a publication, among countless other accolades, and nothing could be more motivating in my academic career.
+
+<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small>

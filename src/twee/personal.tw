@@ -1,0 +1,89 @@
+:: p_10 [the-writer] {"position":"125,425","size":"100,100"}
+<<if $playedAnimations.includes(passage()) and settings.autoskip>>Yes—the writer. Of wild tales and manicured verse.
+<p style="font-family: monospace;">Of flashing cursors at the end of programmed lines;</p>
+and essays painstakingly structured. Of language and of knowledge and of art and of pain and of beauty. The writer of all things, in all things; the writer through and through.
+
+<<nobr>>
+You will explore Jester's...
+<div class="choices">
+	<div class="flirt-choice-item">[[Motivation|p_11]]</div>
+	<div class="special-choice-item">[[Achievements|p_12]]</div>
+	<div class="choice-item">[[Strengths|p_13]]</div>
+    <div class=choice-item><a href="https://jesterlumos.github.io/downloads/Jester%20Lumos%20Resume.pdf">Resume</a></div>
+</div>
+
+<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small><</nobr>><<else>><<set $playedAnimations.push(passage())>><<nobr>><<fadein 1s>>Yes—the writer.<</fadein>> <<timed 1s>><<fadein 2s>>Of wild tales and manicured verse.<</fadein>><</timed>> <<timed 3s>><<fadein 1s>><p style="font-family: monospace;">Of flashing cursors at the end of programmed lines;</p><</fadein>><</timed>> <<timed 5s>><<fadein 1s>>and essays painstakingly structured.<</fadein>><</timed>> <<timed 7s>><<fadein 1s>>Of language and of knowledge and of art and of pain and of beauty.<</fadein>><</timed>> <<timed 9s>><<fadein 1s>>The writer of all things, in all things; the writer through and through.<</fadein>><</timed>><</nobr>>
+
+<<nobr>><<timed 10s>>
+You will explore Jester's...
+<div class="choices">
+	<div class="flirt-choice-item">[[Motivation|p_11]]</div>
+	<div class="special-choice-item">[[Achievements|p_12]]</div>
+	<div class="choice-item">[[Strengths|p_13]]</div>
+    <div class=choice-item><a href="https://jesterlumos.github.io/downloads/Jester%20Lumos%20Resume.pdf">Resume</a></div>
+</div>
+
+<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small><</timed>><</nobr>><</if>>
+
+
+:: p_11 [autosave motivation] {"position":"250,425","size":"100,100"}
+<<nobr>><h2>Jester's "Why:"</h2>
+<small>My motivations for attending college</small><</nobr>>
+
+"One of the great stuggles of my life is the laborious process of attempting to shift my paradigm so drastically that the pursuit of education needs justification or explicit motivation. The singular height of frustration for me is the understanding that knowledge exists which I do not have. When a question enters my mind, rest is impossible until it is not only answered but intuitively understood. 
+
+With this context, hopefully it is understandable that I am not externally motivated to continue my academic journey, rather I <em>need</em> it as one might <em>need</em> air or drink. It's the voice in the back of my head buzzing in the background of everything else until I finally consume the answer and everyone else has forgotten that there was ever even a question. It is a visceral, inherent urge; it is my nature." - Jester Lumos, 2025
+
+<small style="text-align: center;">Hint: use the <i class="fa-solid fa-user" alt="statement"></i> icon to view Artist's Statement or the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small>
+
+
+:: p_12 [autosave achivements] {"position":"375,425","size":"100,100"}
+<<nobr>><h2>Achievements</h2>
+<small>A curated sampling of Jester's most notable recent achievements</small><</nobr>>
+
+<blockquote>In 2024-2025, Jester Lumos was published in Paradise Review for their 2nd-place poem, [["the Pen imprisoned"|the Pen imprisoned]]. View more details about the publication and competition on PVCC's homepage and the first few lines of the poem below: 
+<br>
+the state’s men came to take the poet’s home
+she Trekked a desert page
+they took her clothes they took her skin
+she Glided through ink seas [...]</blockquote>
+<div class="special-choice-item"><a href="https://www.paradisevalley.edu/academics/english/creative-writing/paradise-review" target="_blank">Paradise Review</a></div>
+
+<blockquote>In 2025, Jester was honored at the MCCCD Artist's of Promise Gala for their 3rd-place poem, [["Costco isn't a store"|Costco isn't a store]]. View more details about the competition on MCC's homepage and the first few lines of the poem below: 
+<br>
+Costco isn't a store
+It’s holding up your mother’s badge
+to the armed guards outside of a Fortress
+and feeling important as they wave you inside. [...]</blockquote>
+<div class="special-choice-item"><a href="https://www.mesacc.edu/departments/communication-theatre-film-arts/theatre-film-arts/opportunities/artists-promise" target="_blank">Artists of Promise (via MCC)</a></div>
+
+<blockquote>Over the summer in 2019, Jester became one of the first four scouts registered F to become National Youth Leadership Training certified in the Pacific Skyline Council. This was the first NYLT offering by the PacSky council after the formation of the co-ed Scouts BSA. Jester's patrol was named honor patrol at the end of the training.</blockquote>
+<div class="choice-item"><a href="https://www.scouting.org/programs/scouts-bsa/resources/nylt/" target="_blank">NYLT Program Details</a></div>
+<blockquote>In 2022, following a dual-enrollment IT course offered through Rio Salado Community College, Jester became TestOut PC Pro certified. Via the Arizona Department of Education, this certification qualifies them "to install, repair, configure, secure, and manage computer hardware, operating systems, and software in home or corporate environments."</blockquote>
+<div class="choice-item"><a href="https://www.azed.gov/sites/default/files/2019/06/TestOut%20PC%20Pro%20Certification%20Fact%20Sheet.pdf?id=5d0900e91dcb25172849f285" target="_blank">TestOut PC Pro Certification Factsheet.pdf</a></div>
+<blockquote>In 2022, Jester participated in an optional opportunity offered as part of a dual enrollment IT course to attempt two Microsoft Technology Associates certifications, earning both Windows Fundamentals and Networking Fundamentals certifications. According to the Arizona Department of Education, the MTA program "addresses a wide range of critical technology concepts with exams that are designed to assess and validate core technical concepts in three primary areas: Developer, Database, and IT Professional."</blockquote>
+<<nobr>><div class="choice-item"><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/98-349/" target="_blank">MTA Windows Operating System Fundamentals</a></div>
+<div class="choice-item"><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/98-366/" target="_blank">MTA Networking Fundamentals</a></div><</nobr>>
+<blockquote>For excellence demonstrated during a dual enrollment IT course offered by Rio Salado College, Jester was nominated for and awarded the National Center for Women in IT's Aspirations in Computing award. Beneficiaries of the high school award are women and gender-diverse high school students selected "based on their aptitude and aspirations in technology and computing, as demonstrated by their computing experience, computing-related activities, leadership experience, persistence, and future plans," per the NCWIT webpage. </blockquote>
+<div class="choice-item"><a href="https://www.aspirations.org/award-programs/aic-high-school-award" target="_blank">NCWIT Aspirations in Computing (High School)</a></div>
+
+<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small>
+
+
+:: p_13 [autosave strengths] {"position":"500,425","size":"100,100"}
+<<nobr>><h2>Strengths</h2>
+<small>A description of Jester's academic strengths. References attached below.</small><</nobr>>
+
+"My curious nature has led me to develop countless skillsets across numerous disciplines, but three core strengths stand above all others: language, technology, and especially knowledge acquisition. While I am fluent in only one natural language (and one constructed language), I form linguistic and cross-linguistic connections intuitively, and excel at effective communication and creative expression across disciplines in the languages I do command. 
+
+This also extends partially into the domain of the second strength, as much of my technological prowess has come from my ability to rapidly aqcuire understanding of various programming languages with their own unique sets of syntax and semantics. Most crucial of technological strengths, however, is my ability to problem-solve. When I am faced with a technological issue I do not understand or am not equipped to resolve, I am able to use troubleshooting and research techniques to deduce what information I need to attain, efficiently attain it, and apply it in real time to resolve complex issues.
+
+As is common with individual attributes, my third core strength also ties in to the previous two, as these skills would be much more difficult if not impossible to attain without my gift for rapid learning. When I am faced with skills or knowledge I do not possess, my brain considers that to be unacceptable, and I can't stop until it is rectified. As such, I have become incredibly efficient at seeking out knowledge and honing skills independently, and I can gain significant understanding in very little time with no resources beyond an internet connection or library card." - Jester Lumos, 2025
+
+<<nobr>><h2>References</h2>
+<small>This section will be populated once all references are collected.</small><</nobr>>
+
+<blockquote>Explain relationship to referer</blockquote>
+<div class="choice-item"><a href="" target="_blank">Referer's Reference</a></div>
+
+<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small>
