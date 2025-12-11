@@ -67,7 +67,7 @@
 <<done>>
     <<script>>
         $('#listbox-semester').on('change', function () {
-            $("#classDesc").fadeOut(250);
+            $("#coursework").fadeOut(250);
             setTimeout(function () {
                 $("#coursework").empty().wiki("<<= $semesterContent[$semester]>>").fadeIn(250);
             }, 250);
