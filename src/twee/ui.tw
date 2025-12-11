@@ -12,6 +12,8 @@
 </div>
 
 :: nav [noreturn nobr] {"position":"250,150","size":"100,100"}
+<<link '<i class="fa-solid fa-circle-chevron-left" alt="back"></i>'>><<goto `$history[$history.length - 2]`>><<set $history.delete($history[$history.length - 1])>><</link>>
+
 <<link '<i class="fa-solid fa-bookmark" alt="saves"></i>'>><<run UI.saves();>><</link>>
 
 <<link '<i class="fa-solid fa-gear" alt="settings"></i>'>><<run UI.settings();>><</link>>
@@ -24,7 +26,6 @@
     <</script>>
 <</link>>
 
-<<link '<i class="fa-solid fa-arrow-rotate-left" alt="back"></i>'>><<goto `$history[$history.length - 2]`>><<set $history.delete($history[$history.length - 1])>><</link>>
 
 <<link '<i class="fa-solid fa-door-open" alt="restart"></i>'>><<run UI.restart();>><</link>>
 
