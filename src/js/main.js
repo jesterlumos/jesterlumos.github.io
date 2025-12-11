@@ -22,7 +22,7 @@ l10nStrings.savesLabelImport = 'Upload Save\u2026';
 
 /* settings */
 
-Setting.addHeader("Change Settings");
+Setting.addHeader("Portfolio Settings");
 
 /* font type */
 

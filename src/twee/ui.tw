@@ -78,8 +78,12 @@ This site is hosted by <a href="https://developers.cloudflare.com/pages/" target
 
 <small style="text-align: center;">DISCLAIMER: This project was created for the fair use purpose of education. All intellectual property belongs to its respective owners, and I only claim ownership over my own copyrighted works displayed on this page. This page is not regularly maintained, and external links may break as resources are moved or taken down. Please refer to the credited names and seek the most updated information.</small>
 
+<div style="text-align: right;"><<button "Close Window">><<script>>Dialog.close();<</script>><</button>></div>
+
 :: profile [noreturn] {"position":"500,150","size":"100,100"}
 <h1>Artist's Statement</h1>
 "Nothing enrages me more than the notion of the idea //'coming to'// or being //'found by'// the artist. An idea is anything I //decide// is an idea. There’s ideas in your current surroundings. There’s ideas in my breakfast. There’s ideas in every conversation, every sensation, every occupation. The world is littered with them, and my job is simply to decide one of them gets to truly live, drop its seed into the offensive soil of a blank page, and listen as it whispers to me how it is meant to grow.
 
 When it has spread everywhere it could ever be across every corner of the space, I must overpower it, don scalpel and brass knuckles, and lovingly pummel it in the gut until it spills bottled emotion across the page and begs for mercy. I take a chisel and don’t stop carving until I see aching, shimmering bone. When I’ve finished and the tortured, anguished thing in front of me screams in tune with my inner monologue, I lock it away in a drawer until I forget it ever existed. I either find it as a finished piece or catch a hint of free will and look for the woodchipper." – Jester Lumos, 2024
+
+<div style="text-align: right;"><<button "Close Window">><<script>>Dialog.close();<</script>><</button>></div>
