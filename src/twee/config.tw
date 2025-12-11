@@ -37,6 +37,14 @@ Jester Lumos – Puma Portfolio
 }
 
 :: PassageDone [noreturn nobr footer] {"position":"325,0","size":"100,100"}
+<<script>>
+    var myDiv = document.getElementById("passages");
+    myDiv.scrollTop = 0;
+<</script>>
+
+/* scroll top --
+    this script makes the page scroll back to the top every time you move on to the next passage -- do not delete it! 
+*/
 
 :: PassageHeader [noreturn nobr] {"position":"200,0","size":"100,100"}
 <<if settings.notifs>><<if tags().includes('autosave')>><<notify 2s>>Saving...<</notify>><</if>><</if>>
