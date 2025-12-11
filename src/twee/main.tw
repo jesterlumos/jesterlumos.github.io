@@ -13,7 +13,7 @@
 :: p_00 {"position":"125,300","size":"100,100"}
 <<if $playedAnimations.includes(passage()) and settings.autoskip>><<notify 2s>>Animation skipped.<</notify>>Your eyes dart across the page as you wait for something to appear. Fools dance and buttons alight; the writer has caught your attention. 
 
-Something appears. A lone paragraph. It denotes //you//. You don't know how to feel yet.
+Something appears. A lone paragraph. It denotes <em>you</em>. You don't know how to feel yet.
 
 What has the writer done? What drives the writer? Where does the writer want to be? You must explore the writer further. What do you need to know?
 
@@ -24,14 +24,14 @@ What has the writer done? What drives the writer? Where does the writer want to 
 </div>
 <small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small><</nobr>>
 <<else>><<set $playedAnimations.push(passage())>><<fadein 1s>>Your eyes dart across the page as you wait for something to appear. Fools dance and buttons alight; the writer has caught your attention. <</fadein>>
-<<timed 3s>><<fadein 1s>>
-Something appears. A lone paragraph. It denotes //you//. You don't know how to feel yet.<</fadein>><</timed>>
-<<timed 6s>><<fadein 1s>>
+<<timed 2s>><<fadein 1s>>
+Something appears. A lone paragraph. It denotes <em>you</em>. You don't know how to feel yet.<</fadein>><</timed>>
+<<timed 4s>><<fadein 1s>>
 What has the writer done? What drives the writer? Where does the writer want to be? You must explore the writer further. What do you need to know?
 <</fadein>><</timed>>
-<<nobr>> <<timed 8s>><<fadein 2s>><div class="choices">
+<<nobr>> <<timed 6s>><div class="choices">
 	<div class="flirt-choice-item">[[The Writer?|p_10]]</div>
 	<div class="choice-item">[[Where have they been?|p_20]]</div>
 	<div class="choice-item">[[Where are they going?|p_30]]</div>
-</div><</fadein>>
+</div>
 <small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small><</timed>><</nobr>><</if>>
