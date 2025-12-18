@@ -20,14 +20,27 @@
 
 <<link '<i class="fa-solid fa-user" alt="profile"></i>'>>
     <<script>>
-        Dialog.setup("profile","profile");
+        Dialog.setup("profile", "profile");
         Dialog.wiki(Story.get("profile").processText());
         Dialog.open();
     <</script>>
 <</link>>
 
-
 <<link '<i class="fa-solid fa-door-open" alt="restart"></i>'>><<run UI.restart();>><</link>>
+
+:: PassageFooter [noreturn nobr]
+<<if passage() != "start-menu">>
+    <div id="footer">Copyright © 2025 Jester Lumos&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <small id="footer-hint">
+            <<switch random(2)>>
+                <<case 0>> Hint: Use <i class="fa-solid fa-circle-chevron-left" alt="back"></i> to go back or <i class="fa-solid fa-user" alt="statement"></i> to view Artist's Statement.
+                <<case 1>> Hint: Use <i class="fa-solid fa-circle-chevron-left" alt="back"></i> to go back or <i class="fa-solid fa-bookmark" alt="saves"></i> to save your session at any page.
+                <<case 2>> Hint: Use <i class="fa-solid fa-circle-chevron-left" alt="back"></i> to go back or <i class="fa-solid fa-gear" alt="settings"></i> to change page settings.
+            <</switch>>
+        </small>
+    </div>
+<</if>>
+
 
 :: title-bar [noreturn nobr] {"position":"125,150","size":"100,100"}
 <div id="title-container">
@@ -57,7 +70,7 @@
             <</script>>
         <</button>>
     </div><</nobr>>
-    <div id="start-menu"><small>Please reach out at <a href="mailto:jesterlumos@gmail.com">jesterlumos@gmail.com</a> rather than my @maricopa.edu address as that account is under my deadname.</small></div>
+    <div id="start-menu"><small style="width: 24em;">Please reach out at <a href="mailto:jesterlumos@gmail.com">jesterlumos@gmail.com</a> rather than my @maricopa.edu address as that account is under my deadname.</small></div>
 <</fadein>>
 
 :: credits [credits noreturn] {"position":"375,150","size":"100,100"}

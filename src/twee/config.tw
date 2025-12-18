@@ -1,4 +1,4 @@
-/* Contains configuration passages and SugarCube special passages (StoryInterface is in ui.tw) */
+/* Contains configuration passages and SugarCube special passages (StoryInterface and PassageFooter are in ui.tw) */
 
 :: StoryTitle
 Jester Lumos – Puma Portfolio

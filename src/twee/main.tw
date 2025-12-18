@@ -22,7 +22,7 @@ What has the writer done? What drives the writer? Where does the writer want to 
 	<div class="choice-item">[[Where have they been?|p_20]]</div>
 	<div class="choice-item">[[Where are they going?|p_30]]</div>
 </div>
-<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small><</nobr>>
+<small style="text-align: center;">Hint: Use <i class="fa-solid fa-circle-chevron-left" alt="back"></i> rather than your browser's back button.</small><</nobr>>
 <<else>><<set $playedAnimations.push(passage())>><<fadein 1s>>Your eyes dart across the page as you wait for something to appear. Fools dance and buttons alight; the writer has caught your attention. <</fadein>>
 <<timed 2s>><<fadein 1s>>
 Something appears. A lone paragraph. It denotes <em>you</em>. You don't know how to feel yet.<</fadein>><</timed>>
@@ -34,4 +34,4 @@ What has the writer done? What drives the writer? Where does the writer want to 
 	<div class="choice-item">[[Where have they been?|p_20]]</div>
 	<div class="choice-item">[[Where are they going?|p_30]]</div>
 </div>
-<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small><</timed>><</nobr>><</if>>
+<small style="text-align: center;">Hint: Use <i class="fa-solid fa-circle-chevron-left" alt="back"></i> rather than your browser's back button.</small><</timed>><</nobr>><</if>>
