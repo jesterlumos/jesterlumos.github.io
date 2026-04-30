@@ -28,8 +28,8 @@
 
 <<link '<i class="fa-solid fa-door-open" alt="restart"></i>'>><<run UI.restart();>><</link>>
 
-:: PassageFooter [noreturn nobr]
-<<if passage() != "start-menu">>
+:: PassageFooter [noreturn nobr] {"position":"100,0"}
+<<if passage() != "start-menu" and passage() != "Start">>
     <div id="footer">Copyright © 2025 Jester Lumos&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <small id="footer-hint">
             <<switch random(2)>>
@@ -54,12 +54,10 @@
     <div id="start-subtitle">The Writer</div>
     <<nobr>><div id="start-menu">
         <<button "View Portfolio" "p_00">><<set $chapter to "Chapter One">><</button>>
-
         <<button "Settings">><<run UI.settings();>><</button>>
-        
         <<button "Saved Sessions">><<run UI.saves();>><</button>>
-        
-        <<button "Artist's Statement">>    <<script>>Dialog.setup("profile","profile");Dialog.wiki(Story.get("profile").processText());Dialog.open();<</script>>
+        <<button "Artist's Statement">>    
+            <<script>>Dialog.setup("profile","profile");Dialog.wiki(Story.get("profile").processText());Dialog.open();<</script>>
         <</button>>
 
         <<button "Sources">>
@@ -97,6 +95,12 @@ This site is hosted by <a href="https://developers.cloudflare.com/pages/" target
 <h1>Artist's Statement</h1>
 "Nothing enrages me more than the notion of the idea //'coming to'// or being //'found by'// the artist. An idea is anything I //decide// is an idea. There’s ideas in your current surroundings. There’s ideas in my breakfast. There’s ideas in every conversation, every sensation, every occupation. The world is littered with them, and my job is simply to decide one of them gets to truly live, drop its seed into the offensive soil of a blank page, and listen as it whispers to me how it is meant to grow.
 
-When it has spread everywhere it could ever be across every corner of the space, I must overpower it, don scalpel and brass knuckles, and lovingly pummel it in the gut until it spills bottled emotion across the page and begs for mercy. I take a chisel and don’t stop carving until I see aching, shimmering bone. When I’ve finished and the tortured, anguished thing in front of me screams in tune with my inner monologue, I lock it away in a drawer until I forget it ever existed. I either find it as a finished piece or catch a hint of free will and look for the woodchipper." – Jester Lumos, 2024
+When it has spread everywhere it could ever be across every corner of the space, I must overpower it, don scalpel and brass knuckles, and lovingly pummel it in the gut until it spills bottled emotion across the page and begs for mercy. I take a chisel and don’t stop carving until I see aching, shimmering bone. When I’ve finished and the tortured, anguished thing in front of me screams in tune with my inner monologue, I lock it away in a drawer until I forget it ever existed. I either find it as a finished piece or catch a hint of free will and look for the woodchipper." — Jester Lumos, 2024
+<br><hr>
+"You are holding something unfinished. The thing in your hand is called chapbook. It is called paper, and it is called poem. It is called making and called breaking, called love and labor. It is called by me, and it calls for me, and it calls in my name. It is doing. It is done, but it is done forever so that it’s never over. It is process, and it is god, born from the primordial blood and mead of language. 
+
+My time with process was intimate, but finite. Don’t you dare read these pages and then condemn them to dust. Live in process, changing, making, breaking, pressing your name into its lips and listening to how it sings. Scrawl new process on new paper, fold it so the pages press into each other’s souls, and breathe life into something new. You are holding something unfinished. 
+
+Don’t you dare read these pages as truth. Don’t read as communication or entertainment. Read to drive process into your skull. Learn change, and never let anyone teach it to you. You are a part of process, and it a part of you. Respect it. Or don’t. The process is unfinished, and its ending is up to you." — Jester Lumos, 2026 (The Process of "Process")
 
 <div style="text-align: right;"><<button "Close Window">><<script>>Dialog.close();<</script>><</button>></div>

@@ -1,4 +1,4 @@
-:: Start [splash noreturn] {"position":"75,0","size":"100,100"}
+:: Start [splash noreturn] {"position":"0,200"}
 <span class="logo">
     <img src="https://media.tenor.com/bCYrIBh-wVgAAAAj/the-fool-rotate-tarot-rotate.gif">
 </span>
@@ -21,17 +21,15 @@ What has the writer done? What drives the writer? Where does the writer want to 
 	<div class="flirt-choice-item">[[The Writer?|p_10]]</div>
 	<div class="choice-item">[[Where have they been?|p_20]]</div>
 	<div class="choice-item">[[Where are they going?|p_30]]</div>
-</div>
-<small style="text-align: center;">Hint: Use <i class="fa-solid fa-circle-chevron-left" alt="back"></i> rather than your browser's back button.</small><</nobr>>
+</div><</nobr>>
 <<else>><<set $playedAnimations.push(passage())>><<fadein 1s>>Your eyes dart across the page as you wait for something to appear. Fools dance and buttons alight; the writer has caught your attention. <</fadein>>
 <<timed 2s>><<fadein 1s>>
 Something appears. A lone paragraph. It denotes <em>you</em>. You don't know how to feel yet.<</fadein>><</timed>>
 <<timed 4s>><<fadein 1s>>
 What has the writer done? What drives the writer? Where does the writer want to be? You must explore the writer further. What do you need to know?
 <</fadein>><</timed>>
-<<nobr>> <<timed 6s>><div class="choices">
+<<timed 6s>><<nobr>><div class="choices">
 	<div class="flirt-choice-item">[[The Writer?|p_10]]</div>
 	<div class="choice-item">[[Where have they been?|p_20]]</div>
 	<div class="choice-item">[[Where are they going?|p_30]]</div>
-</div>
-<small style="text-align: center;">Hint: Use <i class="fa-solid fa-circle-chevron-left" alt="back"></i> rather than your browser's back button.</small><</timed>><</nobr>><</if>>
+</div><</nobr>><</timed>><</if>>

@@ -1,9 +1,18 @@
 :: p_10 [the-writer] {"position":"125,425","size":"100,100"}
-<<if $playedAnimations.includes(passage()) and settings.autoskip>>Yes—the writer. Of wild tales and manicured verse.
+<<if $playedAnimations.includes(passage()) and settings.autoskip>><<notify 2s>>Animation skipped.<</notify>><<nobr>>Yes—the writer. Of wild tales and manicured verse.
 <p style="font-family: monospace;">Of flashing cursors at the end of programmed lines;</p>
-and essays painstakingly structured. Of language and of knowledge and of art and of pain and of beauty. The writer of all things, in all things; the writer through and through.
+and essays painstakingly structured. Of language and of knowledge and of art and of pain and of beauty. The writer of all things, in all things; the writer through and through.<</nobr>>
 
-<<nobr>>
+<<nobr>>You will explore Jester's...
+<div class="choices">
+	<div class="flirt-choice-item">[[Motivation|p_11]]</div>
+	<div class="special-choice-item">[[Achievements|p_12]]</div>
+	<div class="choice-item">[[Strengths|p_13]]</div>
+    <div class=choice-item><a href="https://jesterlumos.github.io/downloads/Jester%20Lumos%20Resume.pdf">Resume</a></div>
+</div>
+<</nobr>><<else>><<set $playedAnimations.push(passage())>><<nobr>><<fadein 1s>>Yes—the writer.<</fadein>> <<timed 1s>><<fadein 2s>>Of wild tales and manicured verse.<</fadein>><</timed>> <<timed 3s>><p style="font-family: monospace;"><<type 20ms>>Of flashing cursors at the end of programmed lines;<</type>></p><</timed>> <<timed 5s>><<fadein 1s>>and essays painstakingly structured.<</fadein>><</timed>> <<timed 7s>><<fadein 1s>>Of language and of knowledge and of art and of pain and of beauty.<</fadein>><</timed>> <<timed 9s>><<fadein 1s>>The writer of all things, in all things; the writer through and through.<</fadein>><</timed>><</nobr>>
+
+<<timed 10s>><<nobr>>
 You will explore Jester's...
 <div class="choices">
 	<div class="flirt-choice-item">[[Motivation|p_11]]</div>
@@ -11,19 +20,7 @@ You will explore Jester's...
 	<div class="choice-item">[[Strengths|p_13]]</div>
     <div class=choice-item><a href="https://jesterlumos.github.io/downloads/Jester%20Lumos%20Resume.pdf">Resume</a></div>
 </div>
-
-<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small><</nobr>><<else>><<set $playedAnimations.push(passage())>><<nobr>><<fadein 1s>>Yes—the writer.<</fadein>> <<timed 1s>><<fadein 2s>>Of wild tales and manicured verse.<</fadein>><</timed>> <<timed 3s>><p style="font-family: monospace;"><<type 20ms>>Of flashing cursors at the end of programmed lines;<</type>></p><</timed>> <<timed 5s>><<fadein 1s>>and essays painstakingly structured.<</fadein>><</timed>> <<timed 7s>><<fadein 1s>>Of language and of knowledge and of art and of pain and of beauty.<</fadein>><</timed>> <<timed 9s>><<fadein 1s>>The writer of all things, in all things; the writer through and through.<</fadein>><</timed>><</nobr>>
-
-<<nobr>><<timed 10s>>
-You will explore Jester's...
-<div class="choices">
-	<div class="flirt-choice-item">[[Motivation|p_11]]</div>
-	<div class="special-choice-item">[[Achievements|p_12]]</div>
-	<div class="choice-item">[[Strengths|p_13]]</div>
-    <div class=choice-item><a href="https://jesterlumos.github.io/downloads/Jester%20Lumos%20Resume.pdf">Resume</a></div>
-</div>
-
-<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small><</timed>><</nobr>><</if>>
+<</nobr>><</timed>><</if>>
 
 
 :: p_11 [autosave motivation] {"position":"250,425","size":"100,100"}
@@ -32,10 +29,8 @@ You will explore Jester's...
 
 <blockquote>One of the great stuggles of my life is the laborious process of attempting to shift my paradigm so drastically that the pursuit of education needs justification or explicit motivation. The singular height of frustration for me is the understanding that knowledge exists which I do not have. When a question enters my mind, rest is impossible until it is not only answered but intuitively understood. With this context, hopefully it is understandable that I am not externally motivated to continue my academic journey, rather I <em>need</em> it as one might <em>need</em> air or drink. It's the voice in the back of my head buzzing in the background of everything else until I finally consume the answer and everyone else has forgotten that there was ever even a question. It is a visceral, inherent urge; it is my nature.</blockquote>
 
-<small style="text-align: center;">Hint: use the <i class="fa-solid fa-user" alt="statement"></i> icon to view Artist's Statement or the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small>
 
-
-:: p_12 [autosave achivements] {"position":"375,425","size":"100,100"}
+:: p_12 [autosave] {"position":"375,425","size":"100,100"}
 <<nobr>><h2>Achievements</h2>
 <small>A curated sampling of Jester's most notable recent achievements</small><</nobr>>
 
@@ -65,9 +60,6 @@ and feeling important as they wave you inside. [...]</blockquote>
 <blockquote>For excellence demonstrated during a dual enrollment IT course offered by Rio Salado College, Jester was nominated for and awarded the National Center for Women in IT's Aspirations in Computing award. Beneficiaries of the high school award are women and gender-diverse high school students selected "based on their aptitude and aspirations in technology and computing, as demonstrated by their computing experience, computing-related activities, leadership experience, persistence, and future plans," per the NCWIT webpage. </blockquote>
 <div class="choice-item"><a href="https://www.aspirations.org/award-programs/aic-high-school-award" target="_blank">NCWIT Aspirations in Computing (High School)</a></div>
 
-<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small>
-
-
 :: p_13 [autosave strengths] {"position":"500,425","size":"100,100"}
 <<nobr>><h2>Strengths</h2>
 <small>A description of Jester's academic strengths. References attached below.</small><</nobr>>
@@ -83,5 +75,3 @@ As is common with individual attributes, my third core strength also ties in to 
 
 <blockquote>Explain relationship to referer</blockquote>
 <div class="choice-item"><a href="" target="_blank">Referer's Reference</a></div>
-
-<small style="text-align: center;">Hint: use the <i class="fa-solid fa-bookmark" alt="saves"></i> icon to save your session at any page.</small>

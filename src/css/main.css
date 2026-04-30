@@ -101,7 +101,7 @@ blockquote p {
 }
 
 .game-start-timed:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 /* start menu */
@@ -194,7 +194,7 @@ blockquote p {
 
 .passage {
   line-height: 1.75;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 #passages::-webkit-scrollbar {
