@@ -43,11 +43,12 @@ html {
   /* display: inline-flex; */
   /* bottom: 1em; */
   /* height: 1em; */
+  /* margin: 0px; */
+  padding: 0em 2em;
 
   letter-spacing: 0.1em;
-  padding: 0;  
+  font-size: 1.2lh;
   text-align: center;
-  width: 65vw;
 }
 
 body {
@@ -153,8 +154,8 @@ blockquote p {
 
 #console {
   display: block;
-  width: 65vw;
   height: 95vh;
+  width: 65vw;
   margin: auto;
   padding: 0em 2em;
 }

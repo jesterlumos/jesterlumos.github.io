@@ -2,13 +2,13 @@
 
 :: StoryInterface {"position":"450,0","size":"100,100"}
 <div id="container">
-	<div id="header"></div>
-  	<div id="console">
+	<header id="header"></header>
+  	<main id="console">
 		<div id="title-bar" data-passage="title-bar"></div>
 		<div id="nav" class="fa-icons" data-passage="nav"></div>
   		<div id="passages"></div>
-  	</div>
-  	<div id="footer"></div></div>
+    </main>
+    <footer id="footer"></footer>
 </div>
 
 :: nav [noreturn nobr] {"position":"250,150","size":"100,100"}
@@ -29,7 +29,12 @@
 <<link '<i class="fa-solid fa-door-open" alt="restart"></i>'>><<run UI.restart();>><</link>>
 
 :: PassageFooter [noreturn nobr] {"position":"100,0"}
-<<if passage() != "start-menu" and passage() != "Start">>
+<<done>>
+    <<script>>
+        $("#footer").empty().wiki('<<if passage() != "start-menu" and passage() != "Start">><div id="footer">Copyright © 2025 Jester Lumos&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<small id="footer-hint"><<switch random(2)>><<case 0>> Hint: Use <i class="fa-solid fa-circle-chevron-left" alt="back"></i> to go back or <i class="fa-solid fa-user" alt="statement"></i> to view Artist\'s Statement.<<case 1>> Hint: Use <i class="fa-solid fa-circle-chevron-left" alt="back"></i> to go back or <i class="fa-solid fa-bookmark" alt="saves"></i> to save your session at any page.<<case 2>> Hint: Use <i class="fa-solid fa-circle-chevron-left" alt="back"></i> to go back or <i class="fa-solid fa-gear" alt="settings"></i> to change page settings.<</switch>></small></div><</if>>')
+    <</script>>
+<</done>>
+/*  <<if passage() != "start-menu" and passage() != "Start">>
     <div id="footer">Copyright © 2025 Jester Lumos&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <small id="footer-hint">
             <<switch random(2)>>
@@ -39,7 +44,7 @@
             <</switch>>
         </small>
     </div>
-<</if>>
+<</if>>  */
 
 
 :: title-bar [noreturn nobr] {"position":"125,150","size":"100,100"}
