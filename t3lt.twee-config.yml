@@ -1,0 +1,11 @@
+sugarcube-2:
+  macros:
+    fadein:
+      name: fadein
+      container: true
+    notify:
+      name: notify
+      container: true
+    cont:
+      name: cont
+      container: true
